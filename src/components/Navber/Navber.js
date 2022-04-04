@@ -10,7 +10,7 @@ const Navber = () => {
             </div>
 
            <div className='link-container'>
-            <NavLink className={({isActive}) => isActive ? "active-link" : "link"} to='Home'>Home</NavLink>
+            <NavLink className={({isActive}) => isActive ? "active-link" : "link"} to=''>Home</NavLink>
             <NavLink className={({isActive}) => isActive ? "active-link" : "link"} to='Reviews'>Reviews</NavLink>
             <NavLink className={({isActive}) => isActive ? "active-link" : "link"} to='Dasboard'>Dasboard</NavLink>
             <NavLink className={({isActive}) => isActive ? "active-link" : "link"} to='Blogs'>Blogs</NavLink>

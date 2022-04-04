@@ -1,0 +1,24 @@
+.home-container{
+    height: 500px;
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+.reviews-section{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}
+
+
+.button{
+    height: 60px;
+    width: 100px;
+    background-color: palevioletred;
+    color: rgb(250, 242, 242);
+  
+    font-size:medium;
+}
+

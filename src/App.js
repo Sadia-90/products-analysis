@@ -8,19 +8,22 @@ import Blogs from "./components/Blogs/Blogs"
 import About from "./components/About/About"
 import Notfound from "./components/Notfound/Notfound"
 
+
 function App() {
+  
   return(
   <>
   <Navber></Navber>
+  
   <Routes>
-    <Route path='/Home' element={<Home/>}/>
+    <Route path='/' element={<Home/>}/>
     <Route path='/Reviews' element={<Reviews/>}/>
     <Route path='/Dasboard' element={<Dasboard/>}/>
     <Route path='/Blogs' element={<Blogs/>}/>
     <Route path='/About' element={<About/>}/>
     <Route path='/*' element={<Notfound/>}/>
   </Routes>
-    
+  
   </>
   )
 }
