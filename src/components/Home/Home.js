@@ -29,6 +29,14 @@ const Home = () => {
           </div>
           <div className='reviews-section'>
             <h1>Customer Reviews</h1>
+
+            const [review, setReview] = useReviews();
+
+
+
+
+
+
           </div>
          <div className='button'>
            <button>See All Reviews</button>
