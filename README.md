@@ -1,6 +1,6 @@
 # product-analysis
 
-##Live Site: [Site-Link]('https://singular-dieffenbachia-578524.netlify.app/')
+## Live Site: [Site-Link](https://singular-dieffenbachia-578524.netlify.app/)
 
 ### description:
 <li>This site is made with React.js and vanila css.</li>
