@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import useReviews from '../../Hooks/ReviewsProducts';
+import ReviewsItem from '../ReviewsItem/ReviewsItem';
 import "./Home.css";
 
 
 
 
 const Home = () => {
-
+  const [reviews] = useReviews();
  
 
     return (
@@ -28,19 +31,21 @@ const Home = () => {
           </div>
           </div>
           <div className='reviews-section'>
-            <h1>Customer Reviews</h1>
-
-            const [review, setReview] = useReviews();
-
-
-
-
-
-
-          </div>
-         <div className='button'>
-           <button>See All Reviews</button>
+            <h1>Customer Reviews: </h1>
+            
+           <div>
+             {
+               reviews.slice(0, 3).map(reviews=><ReviewsItem 
+                reviews={reviews}
+               >{reviews.name}
+               </ReviewsItem>)
+             }
+           </div>
+           <div className='button'>
+           <Link to={'/Reviews'}>see all reviwes</Link>
          </div>
+          </div>
+         
          </div>
          
        
